@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Espresso - Products</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F5E6D3;
+            font-family: Arial, sans-serif;
+            color: #2C1810;
+        }
+        header, nav, footer {
+            background-color: #A17C6B;
+            padding: 20px;
+            text-align: center;
+            color: #FFF;
+        }
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+        nav {
+            background-color: #8B6B5D;
+            padding: 15px;
+        }
+        nav a {
+            color: #FFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #C4A69D;
+            color: #FFF;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: #FFF;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .products-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .products-table th, .products-table td {
+            padding: 15px;
+            border: 1px solid #fff;
+            text-align: center;
+        }
+        .products-table img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .product-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .product-link:hover {
+            color: #ffd700;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            padding: 30px;
+        }
+        .product-card {
+            background-color: #FFF9F0;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #E8D5C4;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .product-name {
+            margin-bottom: 35px;
+        }
+        .product-name a {
+            color: #7D5A50;
+            font-size: 1.4em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .product-name a:hover {
+            color: #A17C6B;
+        }
+        .product-description {
+            color: #6B4F4F;
+            line-height: 1.6;
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+        .order-button {
+            background-color: #A17C6B;
+            color: #FFF;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .order-button:hover {
+            background-color: #8B6B5D;
+            transform: translateY(-2px);
+        }
+        h1 {
+            color: #7D5A50;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="coffee-logo.png" alt="Digital Espresso Logo" class="logo">
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="branches.html">Branches</a>
+        <a href="aboutus.html">About</a>
+    </nav>
+
+    <div class="content">
+        <h1>Our Coffee Selection</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="espresso.jpg" alt="Classic Espresso">
+                <div class="product-name">
+                    <a href="ClassicEspresso.html">Classic Espresso</a>
+                </div>
+                <div class="product-description">
+                    Rich and intense single-origin espresso
+                </div>
+                <button class="order-button">Order Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="cappuccino.jpg" alt="Creamy Cappuccino">
+                <div class="product-name">
+                    <a href="CreamyCapuccino.html">Creamy Cappuccino</a>
+                </div>
+                <div class="product-description">
+                    Perfect balance of espresso and steamed milk
+                </div>
+                <button class="order-button">Order Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="latte.jpg" alt="Vanilla Latte">
+                <div class="product-name">
+                    <a href="VanillaLatte.html">Vanilla Latte</a>
+                </div>
+                <div class="product-description">
+                    Smooth latte with a hint of vanilla
+                </div>
+                <button class="order-button">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Digital Espresso. All rights reserved.</p>
+    </footer>
+</body>
+</html>
